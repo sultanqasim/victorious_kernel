@@ -358,6 +358,11 @@ struct msm_sensor_info_t {
 	enum camb_position_t position;
 };
 
+struct msm_camera_gpio_num_info {
+	uint16_t gpio_num[SENSOR_GPIO_MAX];
+	uint8_t valid[SENSOR_GPIO_MAX];
+};
+
 struct camera_vreg_t {
 	const char *reg_name;
 	enum camera_vreg_type type;
