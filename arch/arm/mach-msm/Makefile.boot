@@ -92,6 +92,11 @@ else
         dtb-$(CONFIG_ARCH_MSM8974)	+= msm8974pro-ac-orthos-p1.dtb
 endif
 
+# MSM8974 Motorola Devices
+dtb-$(CONFIG_ARCH_MSM8974)	+= msm8974-v2-abbagoochie-p1.dtb
+dtb-$(CONFIG_ARCH_MSM8974)	+= msm8974pro-ab-abbagoochie-p2.dtb
+dtb-$(CONFIG_ARCH_MSM8974)	+= msm8974pro-ab-abbagoochie-p3.dtb
+
 # APQ8084
    zreladdr-$(CONFIG_ARCH_APQ8084)	:= 0x00008000
         dtb-$(CONFIG_ARCH_APQ8084)	+= apq8084-sim.dtb
