@@ -483,6 +483,9 @@ int mdss_mdp_rotator_setup(struct msm_fb_data_type *mfd,
 			mutex_lock(&rotator_lock);
 		}
 
+		if (rot->format != fmt->format)
+			format_changed = true;
+
 	} else {
 		pr_err("invalid rotator session id=%x\n", req->id);
 		ret = -EINVAL;
