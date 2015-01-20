@@ -515,6 +515,7 @@ int mdss_mdp_put_img(struct mdss_mdp_img_data *data)
 					msm_ion_unsecure_buffer(iclient,
 							data->srcp_ihdl);
 				}
+				data->mapped = false;
 			}
 			data->mapped = false;
 			ion_free(iclient, data->srcp_ihdl);
