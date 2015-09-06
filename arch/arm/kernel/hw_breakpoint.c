@@ -159,12 +159,6 @@ static int debug_arch_supported(void)
 		arch >= ARM_DEBUG_ARCH_V7_1;
 }
 
-/* Can we determine the watchpoint access type from the fsr? */
-static int debug_exception_updates_fsr(void)
-{
-	return 0;
-}
-
 /* Determine number of WRP registers available. */
 static int get_num_wrp_resources(void)
 {
@@ -832,9 +826,7 @@ int arch_validate_hwbkpt_settings(struct perf_event *bp)
 				(info->ctrl.type == ARM_BREAKPOINT_LOAD ||
 				 info->ctrl.type == ARM_BREAKPOINT_STORE))
 			return -EINVAL;
-
 	}
-
 out:
 	return ret;
 }
@@ -910,12 +902,10 @@ static void watchpoint_handler(unsigned long addr, unsigned int fsr,
 				goto unlock;
 
 			/* Check that the access type matches. */
-			if (debug_exception_updates_fsr()) {
-				access = (fsr & ARM_FSR_ACCESS_MASK) ?
-					  HW_BREAKPOINT_W : HW_BREAKPOINT_R;
-				if (!(access & hw_breakpoint_type(wp)))
-					goto unlock;
-			}
+			access = (fsr & ARM_FSR_ACCESS_MASK) ? HW_BREAKPOINT_W :
+				 HW_BREAKPOINT_R;
+			if (!(access & hw_breakpoint_type(wp)))
+				goto unlock;
 
 			/* We have a winner. */
 			info->trigger = addr;
