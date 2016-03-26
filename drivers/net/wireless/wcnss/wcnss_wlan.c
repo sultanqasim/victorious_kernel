@@ -1438,6 +1438,7 @@ void extract_cal_data(int len)
 	int rc;
 	struct cal_data_params calhdr;
 	unsigned char fw_status = WCNSS_RESP_FAIL;
+	memset(&calhdr, 0, sizeof(calhdr));
 
 	if (len < sizeof(struct cal_data_params)) {
 		pr_err("wcnss: incomplete cal header length\n");
