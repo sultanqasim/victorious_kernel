@@ -11,7 +11,7 @@
  */
 
 /dts-v1/;
-/include/ "msm8974pro-victara_cn-common.dtsi"
+#include "msm8974pro-victara_cn-common.dtsi"
 
 
 / {

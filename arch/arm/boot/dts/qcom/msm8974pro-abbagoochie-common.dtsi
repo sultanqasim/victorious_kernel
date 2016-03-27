@@ -10,9 +10,9 @@
  * GNU General Public License for more details.
  */
 
-/include/ "dsi-panel-mot-smd-720p-cmd.dtsi"
-/include/ "dsi-panel-mot-smd-720p-video.dtsi"
-/include/ "dsi-panel-mot-smd-1080p-cmd.dtsi"
+#include "dsi-panel-mot-smd-720p-cmd.dtsi"
+#include "dsi-panel-mot-smd-720p-video.dtsi"
+#include "dsi-panel-mot-smd-1080p-cmd.dtsi"
 
 / {
 	model = "Motorola QC-MSM8974 Pro Abbagoochie";

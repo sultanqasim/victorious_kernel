@@ -12,9 +12,9 @@
 
 /dts-v1/;
 
-/include/ "msm8226-moto-reserve.dtsi"
-/include/ "msm8926.dtsi"
-/include/ "msm8926-thea-common.dtsi"
+#include "msm8226-moto-reserve.dtsi"
+#include "msm8926.dtsi"
+#include "msm8926-thea-common.dtsi"
 
 / {
 	qcom,msm-id =   <145 0x51 0x82A0>, <145 0x52 0x82A0>, <145 0x53 0x82A0>, <145 0x54 0x82A0>, <145 0x55 0x82A0>,

@@ -12,9 +12,9 @@
 
 /dts-v1/;
 
-/include/ "msm8226-moto-reserve.dtsi"
-/include/ "msm8226-v2.dtsi"
-/include/ "msm8226-falcon-common.dtsi"
+#include "msm8226-moto-reserve.dtsi"
+#include "msm8226-v2.dtsi"
+#include "msm8226-falcon-common.dtsi"
 
 / {
 	/* HWREV: 0x0002 0x82b0

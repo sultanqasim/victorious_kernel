@@ -11,10 +11,10 @@
  * GNU General Public License for more details.
  */
 
-/include/ "msm8226-moto-common.dtsi"
-/include/ "dsi-panel-mot-auo-720p-video.dtsi"
-/include/ "dsi-panel-mot-cmi-720p-video.dtsi"
-/include/ "dsi-panel-mot-lgd-720p-video.dtsi"
+#include "msm8226-moto-common.dtsi"
+#include "dsi-panel-mot-auo-720p-video.dtsi"
+#include "dsi-panel-mot-cmi-720p-video.dtsi"
+#include "dsi-panel-mot-lgd-720p-video.dtsi"
 
 / {
 	model = "Motorola QC-MSM8226 Bigfoot";

@@ -11,10 +11,10 @@
  * GNU General Public License for more details.
  */
 
-/include/ "msm8974-leds.dtsi"
-/include/ "msm8974-camera-sensor-moto.dtsi"
-/include/ "dsi-panel-mot-dummy-qhd-video.dtsi"
-/include/ "carrier-channel-ids.dtsi"
+#include "msm8974-leds.dtsi"
+#include "msm8974-camera-sensor-moto.dtsi"
+#include "dsi-panel-mot-dummy-qhd-video.dtsi"
+#include "carrier-channel-ids.dtsi"
 
 / {
 	cpus {
@@ -405,8 +405,8 @@
 		qcom,vref-batt-therm-uv = <1800000>;
 		qcom,default-kohm = <130>;
 
-		/include/ "batterydata-ey30-lg-fix.dtsi"
-		/include/ "batterydata-ey30-lg.dtsi"
+		#include "batterydata-ey30-lg-fix.dtsi"
+		#include "batterydata-ey30-lg.dtsi"
 	};
 
 	cci: qcom,cci@fda0C000 {

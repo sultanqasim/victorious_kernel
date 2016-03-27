@@ -12,9 +12,9 @@
 
 /dts-v1/;
 
-/include/ "msm8226-moto-reserve.dtsi"
-/include/ "msm8226-v2.dtsi"
-/include/ "msm8226-titan-common.dtsi"
+#include "msm8226-moto-reserve.dtsi"
+#include "msm8226-v2.dtsi"
+#include "msm8226-titan-common.dtsi"
 
 / {
 	qcom,msm-id = <145 0x4e 0x8100>,

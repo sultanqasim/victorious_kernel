@@ -10,13 +10,13 @@
  * GNU General Public License for more details.
  */
 
-/include/ "msm8610-moto-reserve.dtsi"
-/include/ "msm8610-v1.dtsi"
-/include/ "msm8610-camera-sensor-otus-moto.dtsi"
-/include/ "msm8610-moto-common.dtsi"
-/include/ "msm8610-otus-gpiomux.dtsi"
-/include/ "dsi-panel-mot-boe-450-qHD-video.dtsi"
-/include/ "dsi-panel-mot-inx-450-qHD-video.dtsi"
+#include "msm8610-moto-reserve.dtsi"
+#include "msm8610-v1.dtsi"
+#include "msm8610-camera-sensor-otus-moto.dtsi"
+#include "msm8610-moto-common.dtsi"
+#include "msm8610-otus-gpiomux.dtsi"
+#include "dsi-panel-mot-boe-450-qHD-video.dtsi"
+#include "dsi-panel-mot-inx-450-qHD-video.dtsi"
 
 / {
 	chosen {
@@ -209,9 +209,9 @@
 	/delete-node/ mmi,el40-sony-batterydata;
 	/delete-node/ mmi,el40-atl-batterydata;
 
-	/include/ "batterydata-ft40-lg.dtsi"
-	/include/ "batterydata-ft40-sony.dtsi"
-	/include/ "batterydata-ft40-lishen.dtsi"
+	#include "batterydata-ft40-lg.dtsi"
+	#include "batterydata-ft40-sony.dtsi"
+	#include "batterydata-ft40-lishen.dtsi"
 };
 
 &i2c {

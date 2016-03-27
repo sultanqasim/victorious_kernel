@@ -10,9 +10,9 @@
  * GNU General Public License for more details.
  */
 
-/include/ "msm8226-titan-common.dtsi"
-/include/ "msm8226-v1-pm.dtsi"
-/include/ "msm8926-thea-gpiomux.dtsi"
+#include "msm8226-titan-common.dtsi"
+#include "msm8226-v1-pm.dtsi"
+#include "msm8926-thea-gpiomux.dtsi"
 
 / {
 	model = "Motorola QC-MSM8226 Thea";
@@ -81,9 +81,9 @@
 	/delete-node/ mmi,ed30-sony-batterydata-alt;
 	/delete-node/ mmi,ed30-lg-batterydata;
 
-	/include/ "batterydata-ft40-lg.dtsi"
-	/include/ "batterydata-ft40-sony.dtsi"
-	/include/ "batterydata-ft40-lishen.dtsi"
+	#include "batterydata-ft40-lg.dtsi"
+	#include "batterydata-ft40-sony.dtsi"
+	#include "batterydata-ft40-lishen.dtsi"
 };
 
 &i2c_2 {

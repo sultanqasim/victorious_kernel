@@ -12,9 +12,9 @@
 
 /dts-v1/;
 
-/include/ "msm8226-moto-reserve.dtsi"
-/include/ "msm8226-v1.dtsi"
-/include/ "msm8226-bigfoot-common.dtsi"
+#include "msm8226-moto-reserve.dtsi"
+#include "msm8226-v1.dtsi"
+#include "msm8226-bigfoot-common.dtsi"
 
 / {
 	qcom,msm-id = <145 0x41 0x8100>;

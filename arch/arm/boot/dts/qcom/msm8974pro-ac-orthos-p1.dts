@@ -11,8 +11,8 @@
  */
 
 /dts-v1/;
-/include/ "msm8974pro-ac-moto-common.dtsi"
-/include/ "msm8974pro-orthos-common.dtsi"
+#include "msm8974pro-ac-moto-common.dtsi"
+#include "msm8974pro-orthos-common.dtsi"
 
 
 / {

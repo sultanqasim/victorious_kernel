@@ -11,9 +11,9 @@
  */
 
 /dts-v1/;
-/include/ "msm8974-moto-reserve.dtsi"
-/include/ "msm8974-v2-moto-common.dtsi"
-/include/ "dsi-panel-mot-smd-720p-video.dtsi"
+#include "msm8974-moto-reserve.dtsi"
+#include "msm8974-v2-moto-common.dtsi"
+#include "dsi-panel-mot-smd-720p-video.dtsi"
 
 / {
 	model = "Motorola QC-MSM8974 Abbagoochie";
