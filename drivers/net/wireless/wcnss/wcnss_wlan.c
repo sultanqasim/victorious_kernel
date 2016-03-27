@@ -1589,6 +1589,8 @@ static void wcnssctrl_rx_handler(struct work_struct *worker)
 		return;
 	}
 	len -= sizeof(struct smd_msg_hdr);
+	if (len < 0)
+		return;
 
 	phdr = (struct smd_msg_hdr *)buf;
 
