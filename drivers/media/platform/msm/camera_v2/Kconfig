@@ -331,3 +331,13 @@ config MSM_GEMINI
 	depends on MSMB_CAMERA && (ARCH_MSM7X30 || ARCH_MSM8X60 || ARCH_MSM8960)
 	---help---
 	  Enables support for the Gemini JPEG encoder engine for 8x60.
+
+config MSM_CAMERA_ISP_LOCK
+	bool "Qualcomm camera hardware update lock"
+	depends on MSMB_CAMERA
+	---help---
+	  Provides a mechanism to lock hardware update when a sof is
+	  received, and ignore any other sof which is received between
+	  the update process. This is required by the Marshmallow camera
+	  drivers for victara, but is not supported by the older drivers
+	  used on condor and otus.

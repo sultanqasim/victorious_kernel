@@ -695,6 +695,7 @@ static int msm_isp_send_hw_cmd(struct vfe_device *vfe_dev,
 		break;
 	}
 
+#ifdef CONFIG_MSM_CAMERA_ISP_LOCK
 	case VFE_HW_UPDATE_LOCK: {
 		uint32_t update_id =
 			vfe_dev->axi_data.src_info[VFE_PIX_0].last_updt_frm_id;
@@ -723,6 +724,7 @@ static int msm_isp_send_hw_cmd(struct vfe_device *vfe_dev,
 			vfe_dev->axi_data.src_info[VFE_PIX_0].frame_id;
 		break;
 	}
+#endif
 
 	case VFE_READ: {
 		int i;

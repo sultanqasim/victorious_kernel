@@ -329,8 +329,10 @@ struct msm_vfe_src_info {
 	enum msm_vfe_inputmux input_mux;
 	uint32_t width;
 	long pixel_clock;
-	uint32_t input_format;/*V4L2 pix format with bayer pattern*/
+	uint32_t input_format; /*V4L2 pix format with bayer pattern*/
+#ifdef CONFIG_MSM_CAMERA_ISP_LOCK
 	uint32_t last_updt_frm_id;
+#endif
 };
 
 enum msm_wm_ub_cfg_type {
