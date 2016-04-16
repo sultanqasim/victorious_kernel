@@ -13,6 +13,6 @@ find squid_install/ -name '*.ko' -type f -exec cp '{}' cwm_flash_zip/system/lib/
 mv cwm_flash_zip/system/lib/modules/wlan.ko cwm_flash_zip/system/lib/modules/pronto/pronto_wlan.ko
 cp arch/arm/boot/zImage cwm_flash_zip/tools/
 cp arch/arm/boot/dt.img cwm_flash_zip/tools/
-rm -f arch/arm/boot/otus_kernel.zip
+rm -f arch/arm/boot/octopus_kernel.zip
 cd cwm_flash_zip
-zip -r ../arch/arm/boot/otus_kernel.zip ./
+zip -r ../arch/arm/boot/octopus_kernel.zip ./

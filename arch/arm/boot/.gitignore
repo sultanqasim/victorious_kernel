@@ -7,5 +7,5 @@ uImage
 zImage-dtb
 dt.img
 boot.img
-otus_kernel.zip
+octopus_kernel.zip
 initramfs.cpio*
