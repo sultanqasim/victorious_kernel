@@ -333,6 +333,7 @@ static void mdss_fb_parse_dt(struct msm_fb_data_type *mfd)
 	}
 }
 
+#ifndef CONFIG_ARCH_MSM8610
 static int pcc_r = 32768, pcc_g = 32768, pcc_b = 32768;
 static ssize_t mdss_get_rgb(struct device *dev,
 		struct device_attribute *attr, char *buf)
@@ -394,6 +395,7 @@ static ssize_t mdss_set_rgb(struct device *dev,
 
 	return -EINVAL;
 }
+#endif
 
 static ssize_t mdss_fb_get_split(struct device *dev,
 		struct device_attribute *attr, char *buf)
@@ -503,7 +505,9 @@ static DEVICE_ATTR(idle_time, S_IRUGO | S_IWUSR | S_IWGRP,
 	mdss_fb_get_idle_time, mdss_fb_set_idle_time);
 static DEVICE_ATTR(idle_notify, S_IRUGO, mdss_fb_get_idle_notify, NULL);
 static DEVICE_ATTR(msm_fb_panel_info, S_IRUGO, mdss_fb_get_panel_info, NULL);
+#ifndef CONFIG_ARCH_MSM8610
 static DEVICE_ATTR(rgb, S_IRUGO | S_IWUSR | S_IWGRP, mdss_get_rgb, mdss_set_rgb);
+#endif
 
 static struct attribute *mdss_fb_attrs[] = {
 	&dev_attr_msm_fb_type.attr,
@@ -512,7 +516,9 @@ static struct attribute *mdss_fb_attrs[] = {
 	&dev_attr_idle_time.attr,
 	&dev_attr_idle_notify.attr,
 	&dev_attr_msm_fb_panel_info.attr,
+#ifndef CONFIG_ARCH_MSM8610
 	&dev_attr_rgb.attr,
+#endif
 	NULL,
 };
 
