@@ -1,6 +1,4 @@
-ui_print("Squid Kernel for Moto E 3G (otus)");
-
-assert(getprop("ro.product.device") == "otus" || getprop("ro.product.device") == "otus_ds" || abort("This package is for device: otus,otus_ds; this device is " + getprop("ro.product.device") + "."););
+ui_print("Octopus Kernel for Motorola B Family");
 
 ui_print("Extracting flashing tools...");
 package_extract_dir("tools", "/tmp");
