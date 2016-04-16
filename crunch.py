@@ -15,7 +15,7 @@ elif not argv[1] in SUPPORTED_DEVICES:
 OUT_FILE_NAME = "arch/arm/boot/octopus_kernel-" + argv[1] + ".zip"
 
 def clean():
-    system("rm -f arch/arm/boot/dts/*.dtb")
+    system("rm -f arch/arm/boot/*.dtb")
     system("rm -f arch/arm/boot/dt.img")
     system("rm -rf squid_install")
     system("rm -rf cwm_flash_zip/system/lib/modules")
