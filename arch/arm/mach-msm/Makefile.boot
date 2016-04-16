@@ -80,17 +80,17 @@ ifneq ($(CONFIG_MMI_DEVICE_DTBS),y)
 endif
 
 # MSM8974 Motorola Devices
-dtb-$(CONFIG_ARCH_MSM8974)	+= msm8974pro-ab-victara-p0.dtb
-dtb-$(CONFIG_ARCH_MSM8974)	+= msm8974pro-ab-victara-p1b.dtb
+#dtb-$(CONFIG_ARCH_MSM8974)	+= msm8974pro-ab-victara-p0.dtb
+#dtb-$(CONFIG_ARCH_MSM8974)	+= msm8974pro-ab-victara-p1b.dtb
 dtb-$(CONFIG_ARCH_MSM8974)	+= msm8974pro-ab-victara-p2a.dtb
 dtb-$(CONFIG_ARCH_MSM8974)	+= msm8974pro-ab-victara-p2b.dtb
-dtb-$(CONFIG_ARCH_MSM8974)	+= msm8974pro-ac-victara-p1b.dtb
+#dtb-$(CONFIG_ARCH_MSM8974)	+= msm8974pro-ac-victara-p1b.dtb
 dtb-$(CONFIG_ARCH_MSM8974)	+= msm8974pro-ac-victara-p2a.dtb
 dtb-$(CONFIG_ARCH_MSM8974)	+= msm8974pro-ac-victara-p2b.dtb
 dtb-$(CONFIG_ARCH_MSM8974)	+= msm8974pro-ac-victara-p2bf.dtb
-dtb-$(CONFIG_ARCH_MSM8974)	+= msm8974pro-ac-victara_cn-p1a.dtb
+#dtb-$(CONFIG_ARCH_MSM8974)	+= msm8974pro-ac-victara_cn-p1a.dtb
 dtb-$(CONFIG_ARCH_MSM8974)	+= msm8974pro-ac-victara_cn-p3.dtb
-dtb-$(CONFIG_ARCH_MSM8974)	+= msm8974pro-ac-orthos-p1.dtb
+#dtb-$(CONFIG_ARCH_MSM8974)	+= msm8974pro-ac-orthos-p1.dtb
 
 # APQ8084
    zreladdr-$(CONFIG_ARCH_APQ8084)	:= 0x00008000
@@ -156,21 +156,21 @@ dtb-$(CONFIG_ARCH_MSM8226)	+= msm8226-titan-4c.dtb
 dtb-$(CONFIG_ARCH_MSM8226)	+= msm8226-titan-4d.dtb
 dtb-$(CONFIG_ARCH_MSM8226)	+= msm8226-titan-4e.dtb
 dtb-$(CONFIG_ARCH_MSM8226)	+= msm8226-titan-4f.dtb
-dtb-$(CONFIG_ARCH_MSM8226)	+= msm8926-thea-p1a.dtb
-dtb-$(CONFIG_ARCH_MSM8226)	+= msm8926-thea-p1c.dtb
+#dtb-$(CONFIG_ARCH_MSM8226)	+= msm8926-thea-p1a.dtb
+#dtb-$(CONFIG_ARCH_MSM8226)	+= msm8926-thea-p1c.dtb
 dtb-$(CONFIG_ARCH_MSM8226)	+= msm8926-thea-p2.dtb
 dtb-$(CONFIG_ARCH_MSM8226)	+= msm8926-thea-p3.dtb
 else ifeq ($(CONFIG_MMI_PEREGRINE_DTB),y)
-dtb-$(CONFIG_ARCH_MSM8226)	+= msm8926-peregrine-p1.dtb
-dtb-$(CONFIG_ARCH_MSM8226)	+= msm8926-peregrine-p1c.dtb
+#dtb-$(CONFIG_ARCH_MSM8226)	+= msm8926-peregrine-p1.dtb
+#dtb-$(CONFIG_ARCH_MSM8226)	+= msm8926-peregrine-p1c.dtb
 dtb-$(CONFIG_ARCH_MSM8226)	+= msm8926-peregrine-p2.dtb
 dtb-$(CONFIG_ARCH_MSM8226)	+= msm8926-peregrine-p2a1.dtb
 dtb-$(CONFIG_ARCH_MSM8226)	+= msm8926-peregrine-p2d.dtb
 else
-dtb-$(CONFIG_ARCH_MSM8226)	+= msm8226-bigfoot-p1.dtb
-dtb-$(CONFIG_ARCH_MSM8226)	+= msm8226-falcon-p1.dtb
-dtb-$(CONFIG_ARCH_MSM8226)	+= msm8226-falcon-p2.dtb
-dtb-$(CONFIG_ARCH_MSM8226)	+= msm8226-falcon-p2-v2.dtb
+#dtb-$(CONFIG_ARCH_MSM8226)	+= msm8226-bigfoot-p1.dtb
+#dtb-$(CONFIG_ARCH_MSM8226)	+= msm8226-falcon-p1.dtb
+#dtb-$(CONFIG_ARCH_MSM8226)	+= msm8226-falcon-p2.dtb
+#dtb-$(CONFIG_ARCH_MSM8226)	+= msm8226-falcon-p2-v2.dtb
 dtb-$(CONFIG_ARCH_MSM8226)	+= msm8226-falcon-p2b.dtb
 dtb-$(CONFIG_ARCH_MSM8226)	+= msm8226-falcon-p2b1.dtb
 dtb-$(CONFIG_ARCH_MSM8226)	+= msm8226-falcon-p3c.dtb
@@ -213,21 +213,21 @@ ifneq ($(CONFIG_MMI_DEVICE_DTBS),y)
 endif
 
 # MSM8610 Motorola Devices
-dtb-$(CONFIG_ARCH_MSM8610)	+= msm8610-condor-p0.dtb
-dtb-$(CONFIG_ARCH_MSM8610)	+= msm8610-condor-p0c.dtb
-dtb-$(CONFIG_ARCH_MSM8610)	+= msm8610-condor-p0c-v2.dtb
-dtb-$(CONFIG_ARCH_MSM8610)	+= msm8610-condor-p1b.dtb
-dtb-$(CONFIG_ARCH_MSM8610)	+= msm8610-condor-p1b-v2.dtb
-dtb-$(CONFIG_ARCH_MSM8610)	+= msm8610-condor-p1c.dtb
-dtb-$(CONFIG_ARCH_MSM8610)	+= msm8610-condor-p1c-v2.dtb
-dtb-$(CONFIG_ARCH_MSM8610)	+= msm8610-condor-p1d.dtb
-dtb-$(CONFIG_ARCH_MSM8610)	+= msm8610-condor-p1d-v2.dtb
-dtb-$(CONFIG_ARCH_MSM8610)	+= msm8610-condor-p2.dtb
-dtb-$(CONFIG_ARCH_MSM8610)	+= msm8610-condor-p2a1.dtb
+#dtb-$(CONFIG_ARCH_MSM8610)	+= msm8610-condor-p0.dtb
+#dtb-$(CONFIG_ARCH_MSM8610)	+= msm8610-condor-p0c.dtb
+#dtb-$(CONFIG_ARCH_MSM8610)	+= msm8610-condor-p0c-v2.dtb
+#dtb-$(CONFIG_ARCH_MSM8610)	+= msm8610-condor-p1b.dtb
+#dtb-$(CONFIG_ARCH_MSM8610)	+= msm8610-condor-p1b-v2.dtb
+#dtb-$(CONFIG_ARCH_MSM8610)	+= msm8610-condor-p1c.dtb
+#dtb-$(CONFIG_ARCH_MSM8610)	+= msm8610-condor-p1c-v2.dtb
+#dtb-$(CONFIG_ARCH_MSM8610)	+= msm8610-condor-p1d.dtb
+#dtb-$(CONFIG_ARCH_MSM8610)	+= msm8610-condor-p1d-v2.dtb
+#dtb-$(CONFIG_ARCH_MSM8610)	+= msm8610-condor-p2.dtb
+#dtb-$(CONFIG_ARCH_MSM8610)	+= msm8610-condor-p2a1.dtb
 dtb-$(CONFIG_ARCH_MSM8610)	+= msm8610-condor-p2b.dtb
 dtb-$(CONFIG_ARCH_MSM8610)	+= msm8610-condor-p2b1.dtb
-dtb-$(CONFIG_ARCH_MSM8610)	+= msm8610-otus-p1.dtb
-dtb-$(CONFIG_ARCH_MSM8610)	+= msm8610-otus-p2.dtb
+#dtb-$(CONFIG_ARCH_MSM8610)	+= msm8610-otus-p1.dtb
+#dtb-$(CONFIG_ARCH_MSM8610)	+= msm8610-otus-p2.dtb
 dtb-$(CONFIG_ARCH_MSM8610)	+= msm8610-otus-p2b.dtb
 
 # MSMSAMARIUM
